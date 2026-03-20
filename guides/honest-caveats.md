@@ -35,7 +35,7 @@ We raise this not to adjudicate the copyright debate but to acknowledge that usi
 
 ## Bias, Hallucination, and Epistemic Risk
 
-Language models hallucinate. Studies examining citation accuracy across multiple LLMs have found fabrication rates ranging from approximately 14% to over 90% depending on the model and domain (see, e.g., GhostCite, 2026), and even GPT-4 — one of the better-performing models — has been shown to fabricate roughly one in five citations in simulated literature reviews. Systematic biases in model outputs are similarly well-documented, with persistent gender, racial, and cultural biases appearing across tasks ranging from resume evaluation to news content generation (see, e.g., UNESCO, 2024).
+Language models hallucinate. Studies examining citation accuracy across multiple LLMs have found fabrication rates ranging from approximately 14% to over 90% depending on the model and domain (see, e.g., Xu et al., 2026), and even GPT-4 — one of the better-performing models — has been shown to fabricate roughly one in five citations in simulated literature reviews. Systematic biases in model outputs are similarly well-documented, with persistent gender, racial, and cultural biases appearing across tasks ranging from resume evaluation to news content generation (see, e.g., UNESCO, 2024).
 
 For researchers, these are not edge cases — they are failure modes that directly threaten the integrity of published work. A hallucinated citation that survives peer review becomes part of the scientific record. A biased model output that informs an analytical decision propagates that bias into findings. The guides in this project repeatedly emphasize the need to verify AI outputs, and we want to be explicit about why: these tools are useful precisely to the extent that you do not trust them blindly.
 
@@ -56,3 +56,4 @@ That is the spirit in which this project is offered.
 - Rosenfeld, A. (2026). Why I may "hire" AI instead of a graduate student. *Science, 391*(6790).
 - Strubell, E., Ganesh, A., & McCallum, A. (2019). Energy and policy considerations for deep learning in NLP. *Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics*.
 - UNESCO. (2024). *Generative AI: UNESCO study reveals alarming evidence of regressive gender stereotypes*.
+- Xu, Z., Qiu, Y., Sun, L., Miao, F., Wu, F., Wang, X., ... & Liu, J. (2026). GhostCite: A Large-Scale Analysis of Citation Validity in the Age of Large Language Models. arXiv preprint arXiv:2602.06718.

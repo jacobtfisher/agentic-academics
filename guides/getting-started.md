@@ -108,7 +108,7 @@ See [MCPs for Academics](mcps-for-academics.md) for details.
 
 ## Tips for Your First Week
 
-1. **Start in a real project.** Don't create a toy folder to experiment with. Open Claude Code in a manuscript directory or analysis project you're actively working on. The value becomes obvious faster when the stakes are real.
+1. **Start in a (copy of) a real project.** Don't create a toy folder to experiment with. Open Claude Code in a manuscript directory or analysis project you're actively working on. Make a copy of the directory first, just to be safe as you're getting your training wheels. The value becomes obvious faster when you're working with real data, but you don't want to accidentally delete everything.
 
 2. **Ask it to explain, not just do.** When Claude Code writes code or suggests an approach, ask *why*. "Why did you choose that statistical test?" "What are the alternatives here?" This builds your understanding and catches mistakes early.
 

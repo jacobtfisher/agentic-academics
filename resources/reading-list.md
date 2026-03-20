@@ -35,8 +35,6 @@ Curated links for academics getting started with agentic AI tools.
 
 - **Bjork, R. A., & Bjork, E. L. (2011).** Making things hard on yourself, but in a good way: Creating desirable difficulties to enhance learning. *Psychology and the Real World*, 56–64.
 
-- **Ong, W. J. (1982).** *Orality and Literacy: The Technologizing of the Word*. Methuen. — The foundational argument that writing restructures consciousness.
-
 ## Community
 
 - [Claude Code GitHub Discussions](https://github.com/anthropics/claude-code/discussions) — community Q&A and workflow sharing

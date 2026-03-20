@@ -2,15 +2,21 @@
 
 A practical guide to using agentic AI tools in academic research — not as a shortcut, but as a thinking partner.
 
-This project started as a conversation after a faculty workshop on AI-assisted research workflows. The advice here is grounded in daily use: managing research projects, connecting literature, writing manuscripts, and building knowledge systems that grow over time.
+This project grew out of a conversation following a faculty workshop on AI-assisted research workflows. The advice here is grounded in daily use: managing research projects, connecting literature, writing manuscripts, and building knowledge systems that grow over time. We write as researchers who use these tools in our own work and who think carefully about both their potential and their costs.
 
-The focus is on [Claude Code](https://docs.anthropic.com/en/docs/claude-code) but the principles apply broadly as agentic tools evolve.
+The focus is on [Claude Code](https://docs.anthropic.com/en/docs/claude-code), but the principles apply broadly as agentic tools evolve.
 
 ## Who This Is For
 
 - Faculty and graduate students curious about integrating AI into their research process
-- Researchers who want to go beyond "chat with a bot" into tool-augmented workflows
+- Researchers who want to move beyond "chat with a bot" into tool-augmented workflows
 - Anyone who's heard about Claude Code, MCPs, or AI skills and wants to understand what they actually look like in practice
+
+## A Note on What This Project Is Not
+
+This is not an argument that academics should adopt AI tools uncritically, and it is not a dismissal of the real concerns surrounding them. The environmental costs of large-scale AI are measurable and ongoing. The risk of deskilling — particularly for graduate students and early-career researchers — is serious. The concentration of AI capability in a handful of corporations raises legitimate questions about dependency and the control of knowledge infrastructure. The training data that undergirds these models was, in many cases, sourced from copyrighted work without consent. And the tendency of language models to hallucinate, exhibit systematic bias, and homogenize intellectual output poses direct risks to research integrity.
+
+We engage with all of these concerns in detail in [Honest Caveats](guides/honest-caveats.md). We raise them here because we think any practical guide to these tools must be honest about what it is asking readers to participate in. This project is written for researchers who have already decided to engage with agentic AI tools and want to do so thoughtfully — not for everyone, and not without reservation.
 
 ## Guides
 
@@ -18,12 +24,13 @@ Each guide is standalone — start wherever you're most curious.
 
 | Guide | What It Covers |
 |-------|---------------|
-| [Teach Me, Don't Do It For Me](guides/teach-me-mindset.md) | The most important mindset shift for using AI in research |
+| [Honest Caveats](guides/honest-caveats.md) | Environmental costs, deskilling, corporate capture, bias — what we owe the critics |
+| [Teach Me, Don't Do It For Me](guides/teach-me-mindset.md) | The most consequential mindset shift for using AI in research |
 | [Getting Started](guides/getting-started.md) | Installing Claude Code, your first conversation, orientation |
 | [Skills for Research](guides/skills-for-research.md) | Reusable prompts that encode your research workflows |
 | [MCPs for Academics](guides/mcps-for-academics.md) | Connecting Claude Code to Zotero, Obsidian, and other tools |
 | [Creating Serendipity](guides/creating-serendipity.md) | Building pipelines that surface unexpected connections |
-| [CLAUDE.md as Institutional Memory](guides/claude-md-as-memory.md) | Teaching your AI assistant how your research works |
+| [CLAUDE.md as Institutional Memory](guides/claude-md-as-memory.md) | Teaching your AI collaborator how your research works |
 
 ## Examples
 
@@ -39,7 +46,7 @@ The `examples/` folder contains generalized templates you can adapt to your own 
 
 ## Contributing
 
-This is a living document. If you have workflows, tips, or examples to share, open an issue or PR. The goal is to build a community resource, not a polished textbook.
+This is a living document. If you have workflows, tips, or examples to share, open an issue or PR. The goal is to build a community resource — one that improves through use and contribution, not a polished textbook that pretends to have all the answers.
 
 ## License
 

@@ -7,9 +7,7 @@ prerequisites: [getting-started]
 
 # Skills for Research Workflows
 
-One of Claude Code's most powerful features for academic work is the skill system. Skills are reusable prompts — detailed instructions that encode a specific workflow you want to repeat. Instead of re-explaining your process every session, you write it once and invoke it with a command.
-
-Think of skills as research protocols for your AI collaborator.
+One of Claude Code's most useful features for academic work is the skill system — a mechanism for encoding complex, multi-step workflows as reusable prompts. Rather than re-explaining your process every session, you write it once and invoke it with a command. Think of skills as research protocols for your AI collaborator.
 
 ## What Is a Skill?
 
@@ -23,16 +21,9 @@ When you invoke a skill (e.g., by typing `/my-skill`), Claude Code loads the ins
 
 ## Why Skills Matter for Researchers
 
-Academic work is full of recurring processes:
-- Taking structured notes on a paper you've read
-- Running a standard set of checks on a dataset
-- Generating documentation for an analysis pipeline
-- Conducting a weekly review of your projects
-- Preparing a manuscript for submission to a specific journal
+Academic work is full of recurring processes — taking structured notes on a paper you've read, running a standard set of checks on a dataset, generating documentation for an analysis pipeline, conducting a weekly review of your projects, preparing a manuscript for submission to a specific journal. Each of these involves judgment calls, formatting conventions, and domain knowledge that you'd otherwise need to re-explain every session.
 
-Each of these involves judgment calls, formatting conventions, and domain knowledge. Without skills, you'd re-explain these every session. With skills, you encode the process once and refine it over time.
-
-Skills also serve a **reproducibility function**. A well-written skill is a documented, shareable description of exactly how a workflow operates. Another researcher can read your skill file and understand your process — or adapt it for their own use.
+Skills address both an efficiency problem and a reproducibility problem. On the efficiency side, encoding a workflow once means you don't waste conversation turns re-establishing context. On the reproducibility side, a well-written skill is a documented, shareable description of exactly how a workflow operates. Another researcher can read your skill file and understand your process — or adapt it for their own use. As such, skills serve a dual function: they make your AI interactions more productive *and* they make your methods more transparent.
 
 ## Anatomy of a Skill
 
@@ -83,7 +74,7 @@ Use when the user asks to create a literature note or process a paper.
 - Link to related notes and projects when possible.
 ```
 
-Notice the structure: the skill asks the user to do the thinking (the Q&A step), then organizes and connects their input. It doesn't replace the intellectual work — it scaffolds it.
+Notice the structure: the skill asks you to do the thinking (the Q&A step), then organizes and connects your input. It doesn't replace the intellectual work — it scaffolds it. This is the "teach me" principle operationalized as a workflow.
 
 ## Example Skills for Academic Work
 
@@ -122,19 +113,19 @@ A skill that helps you map a literature:
 
 1. **Start with a workflow you repeat.** If you've explained the same process to Claude Code more than twice, it's a candidate for a skill.
 
-2. **Write the instructions as if for a smart new collaborator.** Be specific about steps, conventions, and quality standards. Include examples of good output.
+2. **Write the instructions as if for a smart new collaborator.** Be specific about steps, conventions, and quality standards. Include examples of good output. The goal is to externalize the tacit knowledge that makes your workflow yours.
 
-3. **Build in user interaction.** The best research skills ask the user questions rather than generating output autonomously. This keeps you in the thinking loop.
+3. **Build in user interaction.** The best research skills ask you questions rather than generating output autonomously. This keeps you in the thinking loop — which, as we argue in [Teach Me, Don't Do It For Me](teach-me-mindset.md), is where the real value lies.
 
-4. **Include reference files.** If your skill needs to follow a style guide, consult a template, or check against a rubric, put those files in a `references/` subfolder alongside the skill.
+4. **Include reference files.** If your skill needs to follow a style guide, consult a template, or check against a rubric, put those files in a `references/` subfolder alongside the skill. The more context the skill has, the better its output.
 
-5. **Iterate.** Run the skill, see what it gets wrong, and refine the instructions. Skills get better with use.
+5. **Iterate.** Run the skill, see what it gets wrong, and refine the instructions. Skills improve with use — each revision encodes something you've learned about both the workflow and the tool.
 
 ## Sharing Skills
 
-Because skills are just markdown files, they're easy to share:
+Because skills are just markdown files, they're straightforward to share:
 - Post them in a GitHub repo (like this one — see `examples/skills/`)
 - Share them with collaborators who use Claude Code
 - Adapt someone else's skill to your own conventions
 
-This is one of the ways agentic AI tools can make research workflows more transparent and reproducible — your "methods" include not just your statistical approach but the documented process by which you engaged with the literature, managed your data, and structured your writing.
+This is one of the ways agentic AI tools can make research workflows more transparent and reproducible. Your "methods" include not just your statistical approach but the documented process by which you engaged with the literature, managed your data, and structured your writing. Taken together, a well-maintained set of skills constitutes a kind of methodological appendix — one that another researcher can not only read but actually run.

@@ -15,7 +15,7 @@ Most people begin by asking AI to *do things*: "Write me a literature review." "
 
 Learning researchers Robert and Elizabeth Bjork coined the term "desirable difficulties" to describe a counterintuitive finding: learning strategies that feel slow and effortful in the moment produce better long-term retention and understanding than strategies that feel easy. Rereading your notes feels productive but generates false familiarity. Forcing yourself to recall information from memory feels frustrating but builds durable knowledge. The discomfort is the mechanism, not an obstacle to it.
 
-Writing works in much the same way. As media theorist Walter Ong argued, writing isn't merely recording thoughts you already have — it *restructures consciousness*. The act of translating a half-formed intuition into a sentence forces you to confront whether the idea is actually coherent, whether the logic holds under the pressure of articulation. The generation-inspection-revision loop that constitutes the writing process is where thinking happens.
+Writing works in much the same way. As media theorist Walter Ong argued, writing isn't merely recording thoughts you already have — it *restructures your thinking* in a way. The act of translating a half-formed intuition into a sentence forces you to confront whether the idea is actually coherent, whether the logic holds under the pressure of articulation. The generation-inspection-revision loop that constitutes the writing process is where thinking happens.
 
 When you ask AI to write for you, you skip that loop entirely. You get output, but you don't get understanding.
 

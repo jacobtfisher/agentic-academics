@@ -27,10 +27,12 @@ Each guide is standalone — start wherever you're most curious.
 | [Honest Caveats](guides/honest-caveats.md) | Environmental costs, deskilling, corporate capture, bias — what we owe the critics |
 | [Teach Me, Don't Do It For Me](guides/teach-me-mindset.md) | The most consequential mindset shift for using AI in research |
 | [Getting Started](guides/getting-started.md) | Installing Claude Code, your first conversation, orientation |
+| [Claude Code, Cowork, and Chat](guides/claude-code-cowork-chat.md) | When to use each mode and why the distinction matters |
 | [Skills for Research](guides/skills-for-research.md) | Reusable prompts that encode your research workflows |
 | [MCPs for Academics](guides/mcps-for-academics.md) | Connecting Claude Code to Zotero, Obsidian, and other tools |
 | [Creating Serendipity](guides/creating-serendipity.md) | Building pipelines that surface unexpected connections |
 | [CLAUDE.md as Institutional Memory](guides/claude-md-as-memory.md) | Teaching your AI collaborator how your research works |
+| [Scheduled Tasks and Automation](guides/scheduled-tasks.md) | AI that works while you sleep — daily scans, status reports, note generation |
 
 ## Examples
 
@@ -43,6 +45,7 @@ The `examples/` folder contains generalized templates you can adapt to your own 
 ## Resources
 
 - **[Reading list](resources/reading-list.md)** — articles, courses, and community links
+- **[Patterns and anti-patterns](resources/patterns-antipatterns.md)** — what works and what doesn't, from daily use
 
 ## Contributing
 

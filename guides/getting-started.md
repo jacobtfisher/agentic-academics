@@ -11,7 +11,7 @@ This guide walks you through installing Claude Code, having your first conversat
 
 ## What Is Claude Code?
 
-Claude Code is a command-line AI assistant that can read and write files, run commands, search your project, and interact with external tools. Unlike a chatbot in a browser window, it operates directly in your working environment — your project folders, your terminal, your existing toolchain.
+Claude Code is an agentic AI assistant that can read and write files, run commands, search your project, and interact with external tools. Unlike a chatbot in a browser window, it operates directly in your working environment — your project folders, your terminal, your existing toolchain.
 
 For researchers, this means it can:
 - Read your manuscripts, data files, and notes
@@ -22,20 +22,34 @@ For researchers, this means it can:
 
 It's not a chatbot you visit. It's a collaborator that sits in your workspace.
 
+Claude Code is one of several ways to interact with Claude. If you're wondering how it compares to the regular chat interface or the desktop app's Cowork features, see [Claude Code, Cowork, and Chat](claude-code-cowork-chat.md) for a breakdown of when each mode is most useful.
+
 ## Installation
 
-### Prerequisites
+There are two ways to access Claude Code:
+
+### Option 1: Through the Desktop App
+
+If you use the [Claude desktop app](https://claude.ai/download) (macOS or Windows), Claude Code is available directly within the app. This is the easiest entry point if you're not comfortable with the terminal — you get the same agentic capabilities in a graphical interface, with the ability to scope conversations to a working directory and use all the same features (CLAUDE.md, skills, MCPs).
+
+To get started, open the Claude desktop app and look for the Claude Code option in the interface.
+
+### Option 2: Terminal Installation
+
+For the full command-line experience:
+
+**Prerequisites:**
 - A terminal (macOS Terminal, iTerm2, Windows Terminal, or any Linux terminal)
 - Node.js 18+ installed ([download here](https://nodejs.org/))
 - An Anthropic API key or a Claude Pro/Max subscription
 
-### Install
+**Install:**
 
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
-### First Launch
+**First Launch:**
 
 Navigate to any project directory and type:
 
@@ -44,6 +58,8 @@ claude
 ```
 
 That's it. You're in a conversation with Claude Code, scoped to whatever directory you're in.
+
+Both options give you access to the same underlying capabilities. The terminal version offers more flexibility for power users (scripting, automation, integration with your existing shell workflow), while the desktop app offers a more approachable starting point. Use whichever fits how you work.
 
 ## Your First Conversation
 

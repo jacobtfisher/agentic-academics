@@ -36,10 +36,12 @@ Zotero is the reference manager of choice for many academics, and the Zotero MCP
 With Zotero connected, Claude Code can:
 
 - **Search your library** by author, title, keyword, or tag
-- **Retrieve full metadata** for any item (authors, abstract, journal, year, DOI)
-- **Access annotations and notes** you've made on papers
-- **Perform semantic search**: find papers related to a concept, not just matching a keyword
-- **Browse collections** you've organized in Zotero
+- **Retrieve full metadata** for any item (authors, abstract, journal, year, DOI), with BibTeX export
+- **Access annotations and notes** you have made on papers, including direct PDF annotation extraction
+- **Perform semantic search** using AI-powered embeddings to find papers related to a concept, not just matching a keyword
+- **Browse collections** you have organized in Zotero
+- **Add papers by DOI or URL** with automatic metadata fetching and open-access PDF attachment
+- **Manage your library**: create collections, update metadata, batch-update tags, find and merge duplicates
 
 ### Example Interactions
 
@@ -68,28 +70,39 @@ This last example is where the real value of tool integration becomes clear. See
 
 ### Setting Up Zotero MCP
 
-1. Make sure Zotero is installed and your library is populated
-2. Install the MCP server (check the [zotero-mcp repository](https://github.com/anthropics/zotero-mcp) for current instructions)
-3. Add the server to your Claude Code MCP configuration (`~/.claude/mcp.json`)
+1. Make sure Zotero 7+ is installed and your library is populated
+2. Install the MCP server (see the [zotero-mcp repository](https://github.com/54yyyu/zotero-mcp) for full documentation):
 
-A basic configuration looks like:
+```bash
+uv tool install zotero-mcp-server
+```
+
+3. Run the setup command, which auto-detects your Zotero installation and configures your MCP client:
+
+```bash
+zotero-mcp setup
+```
+
+The setup wizard will walk you through choosing between local mode (reads directly from your Zotero database, no API key needed) and web API mode (accesses your library through the Zotero API). Local mode is the simplest option for most researchers and provides full-text access.
+
+If you prefer to configure manually, add the following to your Claude Code MCP configuration (`~/.claude/mcp.json`):
 
 ```json
 {
   "mcpServers": {
     "zotero": {
-      "command": "npx",
-      "args": ["zotero-mcp"],
+      "command": "zotero-mcp",
       "env": {
-        "ZOTERO_API_KEY": "your-api-key",
-        "ZOTERO_USER_ID": "your-user-id"
+        "ZOTERO_LOCAL": "true"
       }
     }
   }
 }
 ```
 
-Your API key and user ID are available in your Zotero account settings at [zotero.org/settings](https://www.zotero.org/settings).
+For web API access instead, replace the env block with your API key and library ID from [zotero.org/settings](https://www.zotero.org/settings).
+
+Semantic search is available as an optional extra (`uv tool install "zotero-mcp-server[semantic]"`) and supports local embeddings as well as OpenAI and Gemini models. See the [project documentation](https://stevenyuyy.us/zotero-mcp/) for details.
 
 ## Deep Dive: Scholar Gateway
 

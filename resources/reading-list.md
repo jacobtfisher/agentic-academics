@@ -43,6 +43,10 @@ Curated links for academics getting started with agentic AI tools.
 ## MCP Servers for Academics
 
 - [zotero-mcp](https://github.com/anthropics/zotero-mcp) — connect Claude Code to your Zotero reference library
+- [Scholar Gateway](https://docs.scholargateway.ai/) — Wiley's MCP connector for semantic search across 3M+ peer-reviewed articles; works with Claude Pro via OAuth
+- [paper-search-mcp](https://github.com/openags/paper-search-mcp) — unified search across 20+ academic databases (CrossRef, OpenAlex, Semantic Scholar, arXiv, PubMed, SSRN, and more)
+- [arxiv-mcp-server](https://github.com/blazickjp/arxiv-mcp-server) — search, download, and store arXiv preprints locally
+- [Semantic Scholar MCP](https://github.com/zongmin-yu/semantic-scholar-fastmcp-mcp-server) — paper search, citation networks, and recommendations via the Semantic Scholar API
 - [Obsidian MCP](https://github.com/MarkusPfworked/obsidian-mcp) — read/write/search an Obsidian vault (check for current maintained versions)
 
 ---

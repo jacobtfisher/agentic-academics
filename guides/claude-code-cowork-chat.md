@@ -11,7 +11,7 @@ Claude is available through several interfaces, and the distinctions among them 
 
 ## Chat (claude.ai / Desktop App)
 
-This is what most people mean when they say "I used Claude." You open a browser or the desktop app, type a message, and get a response. Chat is conversational — you provide context in the message, Claude responds, and the exchange lives entirely within that conversation window.
+This is what most people mean when they say "I used Claude." You open a browser or the desktop app, type a message, and get a response. Chat is conversational: you provide context in the message, Claude responds, and the exchange lives entirely within that conversation window.
 
 **What it can do:**
 - Answer questions, explain concepts, brainstorm ideas
@@ -25,7 +25,7 @@ This is what most people mean when they say "I used Claude." You open a browser 
 - Interact with external tools (Zotero, Obsidian, databases)
 - Maintain persistent context across sessions (beyond what the conversation window holds)
 
-**When to use it:** Chat is the right tool for quick, self-contained interactions. If you want to brainstorm a study design, get feedback on a paragraph, talk through an analytical approach, or ask a factual question, chat is fast and requires no setup. It's the intellectual equivalent of a hallway conversation — low overhead, no commitments.
+**When to use it:** Chat is the right tool for quick, self-contained interactions. If you want to brainstorm a study design, get feedback on a paragraph, talk through an analytical approach, or ask a factual question, chat is fast and requires no setup. It is the intellectual equivalent of a hallway conversation: low overhead, no commitments.
 
 **Limitations for research:** The constraint is that chat has no access to your working environment. Every piece of context — your data, your notes, your manuscript draft — must be manually pasted or uploaded into the conversation. For short interactions this is fine. For sustained project work, it becomes a bottleneck.
 
@@ -41,13 +41,13 @@ Claude Code operates directly in your file system. It can read your project file
 - Schedule automated tasks
 - Maintain project-level memory through CLAUDE.md
 
-**When to use it:** Claude Code is the right tool for sustained project work — anything that involves your actual files, your actual data, and your actual tools. Manuscript revision, data analysis, literature management, project tracking, workflow automation. If you find yourself copying and pasting content between your files and a chat window, that's a signal you should be working in Claude Code instead.
+**When to use it:** Claude Code is the right tool for sustained project work, anything that involves your actual files, your actual data, and your actual tools. Manuscript revision, data analysis, literature management, project tracking, workflow automation. If you find yourself copying and pasting content between your files and a chat window, that's a signal you should be working in Claude Code instead.
 
 **Access:** Available both through the terminal (for those comfortable with command-line tools) and through the Claude desktop app (for a more graphical experience). See [Getting Started](getting-started.md) for installation details.
 
 ## Cowork (Desktop App)
 
-Cowork is a collaborative mode available in the Claude desktop app that allows Claude to work alongside you on extended tasks. Where a standard chat is turn-by-turn (you say something, Claude responds, you say something else), Cowork gives Claude the ability to work more autonomously on a task — researching, drafting, iterating — while you continue with other work or check in periodically.
+Cowork is a collaborative mode available in the Claude desktop app that allows Claude to work alongside you on extended tasks. Where a standard chat is turn-by-turn (you say something, Claude responds, you say something else), Cowork gives Claude the ability to work more autonomously on a task (researching, drafting, iterating) while you continue with other work or check in periodically.
 
 **What it adds beyond standard Claude Code:**
 - Claude can work on longer tasks with greater autonomy
@@ -55,7 +55,7 @@ Cowork is a collaborative mode available in the Claude desktop app that allows C
 - Multiple workstreams can run in parallel
 - The interface is designed for collaboration rather than sequential conversation
 
-**When to use it:** Cowork is well suited to tasks that require sustained effort but don't require your continuous input — a first pass at a literature search, drafting boilerplate sections of a grant application, reorganizing a set of notes, running a series of analyses with iterative refinement. The key distinction is autonomy: Cowork is for tasks where you trust Claude to make reasonable intermediate decisions and want to review the output rather than supervise every step.
+**When to use it:** Cowork is well suited to tasks that require sustained effort but do not require your continuous input: a first pass at a literature search, drafting boilerplate sections of a grant application, reorganizing a set of notes, running a series of analyses with iterative refinement. The key distinction is autonomy: Cowork is for tasks where you trust Claude to make reasonable intermediate decisions and want to review the output rather than supervise every step.
 
 **A caveat aligned with the "teach me" mindset:** Cowork's autonomy is a feature that warrants careful use. For mechanical tasks (formatting, data wrangling, file organization), extended autonomy is appropriate and efficient. For intellectual tasks (argumentation, interpretation, research design), you'll want to stay closer to the conversation — checking in frequently, redirecting when needed, and ensuring that the thinking remains yours. The [Teach Me, Don't Do It For Me](teach-me-mindset.md) principles apply with particular force when a tool is capable of working without you.
 

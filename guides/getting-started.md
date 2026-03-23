@@ -11,7 +11,7 @@ This guide walks you through installing Claude Code, having your first conversat
 
 ## What Is Claude Code?
 
-Claude Code is an agentic AI assistant that can read and write files, run commands, search your project, and interact with external tools. Unlike a chatbot in a browser window, it operates directly in your working environment — your project folders, your terminal, your existing toolchain.
+Claude Code is an agentic AI assistant that can read and write files, run commands, search your project, and interact with external tools. Unlike a chatbot in a browser window, it operates directly in your working environment: your project folders, your terminal, your existing toolchain.
 
 For researchers, this means it can:
 - Read your manuscripts, data files, and notes
@@ -20,7 +20,7 @@ For researchers, this means it can:
 - Help you manage complex, multi-file projects
 - Automate repetitive workflows
 
-It's not a chatbot you visit. It's a collaborator that sits in your workspace.
+It is not a chatbot you visit. It is a collaborator that sits in your workspace.
 
 Claude Code is one of several ways to interact with Claude. If you're wondering how it compares to the regular chat interface or the desktop app's Cowork features, see [Claude Code, Cowork, and Chat](claude-code-cowork-chat.md) for a breakdown of when each mode is most useful.
 
@@ -30,7 +30,7 @@ There are two ways to access Claude Code:
 
 ### Option 1: Through the Desktop App
 
-If you use the [Claude desktop app](https://claude.ai/download) (macOS or Windows), Claude Code is available directly within the app. This is the easiest entry point if you're not comfortable with the terminal — you get the same agentic capabilities in a graphical interface, with the ability to scope conversations to a working directory and use all the same features (CLAUDE.md, skills, MCPs).
+If you use the [Claude desktop app](https://claude.ai/download) (macOS or Windows), Claude Code is available directly within the app. This is the easiest entry point if you are not comfortable with the terminal. You get the same agentic capabilities in a graphical interface, with the ability to scope conversations to a working directory and use all the same features (CLAUDE.md, skills, MCPs).
 
 To get started, open the Claude desktop app and look for the Claude Code option in the interface.
 
@@ -63,7 +63,7 @@ Both options give you access to the same underlying capabilities. The terminal v
 
 ## Your First Conversation
 
-Start simple. Navigate to a folder containing some of your work — a manuscript draft, a data analysis project, an R or Python script — and ask Claude Code about it.
+Start simple. Navigate to a folder containing some of your work (a manuscript draft, a data analysis project, an R or Python script) and ask Claude Code about it.
 
 ```
 > What's in this directory? Give me an overview of the project.
@@ -90,19 +90,19 @@ claude
 
 ### CLAUDE.md — Your Project's Memory
 
-If you place a file called `CLAUDE.md` in your project root, Claude Code reads it at the start of every conversation. This is where you describe your project: what the files are, what conventions you follow, what to watch out for. Think of it as onboarding documentation for your AI collaborator — the kind of briefing you'd give a new research assistant on their first day.
+If you place a file called `CLAUDE.md` in your project root, Claude Code reads it at the start of every conversation. This is where you describe your project: what the files are, what conventions you follow, what to watch out for. Think of it as onboarding documentation for your AI collaborator, the kind of briefing you would give a new research assistant on their first day.
 
 See [CLAUDE.md as Institutional Memory](claude-md-as-memory.md) for a deep dive.
 
 ### Skills — Reusable Workflows
 
-Skills are saved prompts that encode complex, multi-step workflows. Rather than re-explaining your literature note process or your data cleaning protocol every session, you write it once as a skill and invoke it with a slash command. The result is both a time-saver and a form of documentation — a shareable record of how your workflow actually operates.
+Skills are saved prompts that encode complex, multi-step workflows. Rather than re-explaining your literature note process or your data cleaning protocol every session, you write it once as a skill and invoke it with a slash command. The result is both a time-saver and a form of documentation, a shareable record of how your workflow actually operates.
 
 See [Skills for Research](skills-for-research.md) for details.
 
 ### MCPs — Tool Connections
 
-Model Context Protocol (MCP) servers let Claude Code interact with external tools: your Zotero library, your Obsidian vault, web APIs, databases. They transform Claude Code from a text assistant into something that can operate across your research ecosystem — searching your references, querying your notes, and pulling in information from the tools you already use.
+Model Context Protocol (MCP) servers let Claude Code interact with external tools: your Zotero library, your Obsidian vault, web APIs, databases. They transform Claude Code from a text assistant into something that can operate across your research ecosystem, searching your references, querying your notes, and pulling in information from the tools you already use.
 
 See [MCPs for Academics](mcps-for-academics.md) for details.
 
@@ -114,7 +114,7 @@ See [MCPs for Academics](mcps-for-academics.md) for details.
 
 3. **Create a CLAUDE.md early.** Even a few lines — "This is a manuscript about X. The data is in /data. I use R for analysis." — will dramatically improve the quality of Claude Code's responses. Context is everything.
 
-4. **Don't fight the terminal.** If you're not accustomed to command-line tools, there's a small learning curve. With that said, Claude Code itself can help you navigate — ask it to explain commands, find files, or troubleshoot errors. The tool teaches you how to use the tool.
+4. **Don't fight the terminal.** If you are not accustomed to command-line tools, there is a small learning curve. With that said, Claude Code itself can help you navigate. Ask it to explain commands, find files, or troubleshoot errors. The tool teaches you how to use the tool.
 
 5. **Review everything.** AI makes mistakes. It will occasionally hallucinate a citation, introduce a bug in code, or misunderstand your intent. Treat its output the way you'd treat a draft from a new research assistant: promising but in need of verification.
 

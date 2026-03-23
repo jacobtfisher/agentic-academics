@@ -7,13 +7,13 @@ prerequisites: [skills-for-research, claude-md-as-memory]
 
 # Scheduled Tasks and Automation
 
-One of the most powerful — and least discussed — capabilities of agentic AI tools is the ability to run tasks on a schedule, without your direct involvement. The AI works while you sleep, while you teach, while you're in a meeting, and has results waiting when you return. For researchers managing multiple projects with overlapping deadlines and competing demands on attention, this is not a convenience. It's a structural advantage.
+One of the most powerful (and least discussed) capabilities of agentic AI tools is the ability to run tasks on a schedule, without your direct involvement. The AI works while you sleep, while you teach, while you're in a meeting, and has results waiting when you return. For researchers managing multiple projects with overlapping deadlines and competing demands on attention, this amounts to a structural advantage.
 
 ## The Case for Automation in Research
 
-Academic research involves a substantial amount of recurring maintenance work that is essential but rarely urgent enough to do in the moment: checking the status of data collections, scanning for upcoming deadlines, reviewing whether projects have gone stale, updating documentation, surfacing new connections in your notes. Left to manual effort, these tasks tend to happen inconsistently — you do them when you remember, which often means you don't do them until something breaks or a deadline arrives unexpectedly.
+Academic research involves a substantial amount of recurring maintenance work that is essential but rarely urgent enough to do in the moment: checking the status of data collections, scanning for upcoming deadlines, reviewing whether projects have gone stale, updating documentation, surfacing new connections in your notes. Left to manual effort, these tasks tend to happen inconsistently. You do them when you remember, which often means you do not do them until something breaks or a deadline arrives unexpectedly.
 
-Scheduled tasks address this by converting maintenance work from something you need to remember into something that happens automatically. The AI performs the scan, generates a report, and places it where you'll see it. Your job shifts from doing the maintenance to reviewing the results — a much lighter cognitive load that can be folded into a morning routine rather than carved out as a separate work session.
+Scheduled tasks address this by converting maintenance work from something you need to remember into something that happens automatically. The AI performs the scan, generates a report, and places it where you'll see it. Your job shifts from doing the maintenance to reviewing the results, a much lighter cognitive load that can be folded into a morning routine rather than carved out as a separate work session.
 
 ## What Scheduled Tasks Can Do
 
@@ -27,12 +27,12 @@ A task that runs each morning and sweeps across your active projects, looking fo
 - **Completions detected** — tasks or milestones checked off since the last scan
 - **Overdue items** — target dates that have passed without resolution
 
-The output is a structured summary placed in your daily note or a dashboard file, organized by urgency. When you sit down to plan your day, the scan has already done the triage — you're reviewing and deciding, not hunting through project files to reconstruct the current state of things.
+The output is a structured summary placed in your daily note or a dashboard file, organized by urgency. When you sit down to plan your day, the scan has already done the triage. You are reviewing and deciding, not hunting through project files to reconstruct the current state of things.
 
 ### Research Note Generation
 
 A task that runs periodically (daily or weekly) and populates your knowledge base with new research notes. The pattern:
-1. Scan for "seed" material — recent annotations in Zotero, flagged ideas in your notes, keywords from active manuscripts
+1. Scan for "seed" material: recent annotations in Zotero, flagged ideas in your notes, keywords from active manuscripts
 2. Search your reference library for related papers, especially ones you tagged but haven't thought about recently
 3. Generate structured research notes that map the seed ideas to relevant literature
 
@@ -46,11 +46,11 @@ A task that runs at the end of each week and generates a summary of activity acr
 - What deadlines are coming in the next two weeks
 - Which projects haven't had any logged activity
 
-This provides the raw material for a weekly review — the data is already gathered and organized, so the review itself can focus on reflection and priority-setting rather than information retrieval.
+This provides the raw material for a weekly review. The data is already gathered and organized, so the review itself can focus on reflection and priority-setting rather than information retrieval.
 
 ### Manuscript Status Tracking
 
-A task that monitors your manuscripts — both those in progress and those under review — and flags status changes or approaching deadlines:
+A task that monitors your manuscripts (both those in progress and those under review) and flags status changes or approaching deadlines:
 - Submission deadlines for conference papers
 - Expected response windows for papers under review
 - Revision deadlines after an R&R
@@ -62,7 +62,7 @@ Not every recurring task benefits from automation, and poorly designed automated
 
 ### Automate the Scan, Not the Decision
 
-The most effective scheduled tasks gather and organize information; they do not take action on your behalf. A task that scans your projects and reports "Reward Proximity Study has had no activity in 22 days" is useful. A task that automatically creates follow-up tasks or sends reminders to collaborators is not — it removes you from the judgment loop at exactly the point where judgment is most needed.
+The most effective scheduled tasks gather and organize information; they do not take action on your behalf. A task that scans your projects and reports "Reward Proximity Study has had no activity in 22 days" is useful. A task that automatically creates follow-up tasks or sends reminders to collaborators removes you from the judgment loop at exactly the point where judgment is most needed.
 
 As such, the output of a scheduled task should be a report, not an action. Present the information clearly, flag what seems urgent, and let the human decide what to do about it.
 
@@ -105,12 +105,12 @@ Allowed tools: Read, Write, Glob, Grep
 
 ### Permissions and Security
 
-Scheduled tasks run with a defined set of tool permissions. This is a feature, not a limitation — you want to be explicit about what an unattended task can and cannot do. For most research automation:
+Scheduled tasks run with a defined set of tool permissions. This is by design: you want to be explicit about what an unattended task can and cannot do. For most research automation:
 - **Read access** to project notes and data files: yes
 - **Write access** to specific output locations (daily notes, dashboards): yes
 - **MCP access** (Zotero, Obsidian): yes, if the task needs to search your library
 - **Git commands**: only if you want the task to commit its output automatically; otherwise, let changes accumulate for your manual review
-- **Shell execution**: be cautious — limit to specific, well-understood commands
+- **Shell execution**: be cautious; limit to specific, well-understood commands
 
 ### Iterating on Task Design
 
@@ -122,6 +122,6 @@ Scheduled tasks benefit from the same iterative refinement as skills. Run the ta
 
 ## What Automation Does Not Replace
 
-Scheduled tasks handle the mechanical aspects of research maintenance — the scanning, the aggregating, the flagging. They do not replace the reflective practice that makes that information useful. A daily status scan tells you what's due and what's stale; it doesn't tell you what matters most or how to allocate your limited time.
+Scheduled tasks handle the mechanical aspects of research maintenance: the scanning, the aggregating, the flagging. They do not replace the reflective practice that makes that information useful. A daily status scan tells you what's due and what's stale; it does not tell you what matters most or how to allocate your limited time.
 
-The scheduled task is the preparation; the daily review conversation (see [the daily review skill template](../examples/skills/daily-review.md)) is where the thinking happens. Both are necessary. Automation without reflection produces reports no one reads. Reflection without automation produces plans based on incomplete information. The combination — automated scanning feeding into a structured, human-driven review — is where the real value lies.
+The scheduled task is the preparation; the daily review conversation (see [the daily review skill template](../examples/skills/daily-review.md)) is where the thinking happens. Both are necessary. Automation without reflection produces reports no one reads. Reflection without automation produces plans based on incomplete information. The combination of automated scanning feeding into a structured, human-driven review is where the real value lies.

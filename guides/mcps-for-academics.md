@@ -7,7 +7,7 @@ prerequisites: [getting-started]
 
 # MCPs for Academics
 
-Model Context Protocol (MCP) servers are what transform Claude Code from a text assistant that reads files and runs commands into something that can actually interact with your research tools. They're the bridge between AI and the software you already use — and for researchers, that bridge matters more than it might first appear.
+Model Context Protocol (MCP) servers are what transform Claude Code from a text assistant that reads files and runs commands into something that can actually interact with your research tools. They serve as the bridge between AI and the software you already use, and for researchers, that bridge matters more than it might first appear.
 
 ## What Is an MCP?
 
@@ -19,13 +19,13 @@ An MCP server is a small program that gives Claude Code the ability to use speci
 - Interact with web APIs
 - Connect to project management tools like Linear or Notion
 
-Think of MCPs as plugins that extend what Claude Code can do. Each MCP exposes a set of *tools* — specific actions Claude Code can take. When you ask Claude Code something that requires one of these tools, it calls the MCP automatically.
+Think of MCPs as plugins that extend what Claude Code can do. Each MCP exposes a set of *tools*, specific actions Claude Code can take. When you ask Claude Code something that requires one of these tools, it calls the MCP automatically.
 
 ## Why MCPs Matter for Research
 
 Academic research involves a constellation of tools: reference managers, note-taking systems, data repositories, writing environments, collaboration platforms. These tools don't usually talk to each other. You manually copy citations from Zotero into your manuscript, manually cross-reference your notes with your reading list, manually check your project tracker against your calendar. The friction is low enough for any single task that it rarely feels worth solving, but it accumulates across the dozens of cross-tool operations that constitute a typical research day.
 
-MCPs collapse that manual layer. They let Claude Code operate across your toolset in a single conversation — retrieving a citation from Zotero, checking it against a note in Obsidian, and incorporating both into a manuscript draft without you switching windows or copy-pasting between applications. In short, they turn a collection of isolated tools into something closer to an integrated research environment.
+MCPs collapse that manual layer. They let Claude Code operate across your toolset in a single conversation, retrieving a citation from Zotero, checking it against a note in Obsidian, and incorporating both into a manuscript draft without you switching windows or copy-pasting between applications. In short, they turn a collection of isolated tools into something closer to an integrated research environment.
 
 ## Deep Dive: Zotero MCP
 
@@ -38,7 +38,7 @@ With Zotero connected, Claude Code can:
 - **Search your library** by author, title, keyword, or tag
 - **Retrieve full metadata** for any item (authors, abstract, journal, year, DOI)
 - **Access annotations and notes** you've made on papers
-- **Perform semantic search** — find papers related to a concept, not just matching a keyword
+- **Perform semantic search**: find papers related to a concept, not just matching a keyword
 - **Browse collections** you've organized in Zotero
 
 ### Example Interactions
@@ -64,7 +64,7 @@ Claude Code searches your library, returns relevant hits, and can summarize the 
 > make a similar argument from a different theoretical tradition?
 ```
 
-This last example is where the real value of tool integration becomes clear — see [Creating Serendipity](creating-serendipity.md) for a deeper treatment of how these cross-library searches can surface connections you wouldn't have found on your own.
+This last example is where the real value of tool integration becomes clear. See [Creating Serendipity](creating-serendipity.md) for a deeper treatment of how these cross-library searches can surface connections you wouldn't have found on your own.
 
 ### Setting Up Zotero MCP
 
@@ -93,16 +93,16 @@ Your API key and user ID are available in your Zotero account settings at [zoter
 
 ## Deep Dive: Scholar Gateway
 
-If Zotero MCP gives Claude Code access to your personal library, Scholar Gateway gives it access to the publisher's. Developed by Wiley, Scholar Gateway is an MCP connector that provides semantic search across more than three million peer-reviewed articles spanning over 1,300 journals — from the sciences and healthcare to business, law, and the humanities.
+If Zotero MCP gives Claude Code access to your personal library, Scholar Gateway gives it access to the publisher's. Developed by Wiley, Scholar Gateway is an MCP connector that provides semantic search across more than three million peer-reviewed articles spanning over 1,300 journals, from the sciences and healthcare to business, law, and the humanities.
 
-The distinction from Zotero matters. Zotero searches what you've already collected. Scholar Gateway searches what's out there. The two are complementary in practice: you might use Scholar Gateway to discover literature you haven't encountered yet, then use Zotero to check whether it connects to work you've already read and annotated. That pairing — discovery and integration — is where the real value lies.
+The distinction from Zotero matters. Zotero searches what you've already collected. Scholar Gateway searches what's out there. The two are complementary in practice: you might use Scholar Gateway to discover literature you haven't encountered yet, then use Zotero to check whether it connects to work you've already read and annotated. That pairing of discovery and integration is where the real value lies.
 
 ### What It Enables
 
 With Scholar Gateway connected, Claude Code can:
 
-- **Semantic search across Wiley's corpus** — find passages based on meaning, not just keyword matching
-- **Surface relevant literature you haven't encountered** — especially useful when working across disciplinary boundaries
+- **Semantic search across Wiley's corpus**: find passages based on meaning, not just keyword matching
+- **Surface relevant literature you have not encountered**, especially when working across disciplinary boundaries
 - **Retrieve citation metadata and DOI links** for anything it finds
 - **Access full article text** (text-only; images, graphs, and charts are excluded)
 
@@ -134,7 +134,7 @@ With Scholar Gateway connected, Claude Code can:
 
 Scholar Gateway connects via MCP using OAuth authentication:
 
-1. You'll need a Wiley CONNECT account — you can create one with your institutional or personal email at [connect.wiley.com](https://connect.wiley.com)
+1. You will need a Wiley CONNECT account. You can create one with your institutional or personal email at [connect.wiley.com](https://connect.wiley.com)
 2. Add the MCP server to your Claude Code configuration:
 
 ```json
@@ -159,7 +159,7 @@ With that said, for researchers working in areas where Wiley journals are promin
 
 ## Open-Source Literature Search MCPs
 
-Scholar Gateway is useful but limited to Wiley's catalog. A growing ecosystem of open-source MCP servers connects Claude Code to broader academic databases — CrossRef, OpenAlex, Semantic Scholar, arXiv, PubMed, and others. These are community-built, free to use, and in many cases surprisingly capable.
+Scholar Gateway is useful but limited to Wiley's catalog. A growing ecosystem of open-source MCP servers connects Claude Code to broader academic databases: CrossRef, OpenAlex, Semantic Scholar, arXiv, PubMed, and others. These are community-built, free to use, and in many cases surprisingly capable.
 
 Three stand out as of early 2026.
 
@@ -167,7 +167,7 @@ Three stand out as of early 2026.
 
 The most comprehensive single server. It provides unified search across more than twenty sources: arXiv, PubMed, Semantic Scholar, CrossRef, OpenAlex, SSRN, bioRxiv, CORE, Europe PMC, DOAJ, and others. Rather than installing separate servers for each database, paper-search-mcp aggregates them behind a single interface.
 
-The practical value here is coverage. CrossRef and OpenAlex index broadly across disciplines, which means social science, humanities, and interdisciplinary work is well-represented — not just STEM. For researchers whose literature spans multiple fields (or who simply want to cast a wide net), this is the strongest option available.
+The practical value here is coverage. CrossRef and OpenAlex index broadly across disciplines, which means social science, humanities, and interdisciplinary work is well-represented, not just STEM. For researchers whose literature spans multiple fields (or who simply want to cast a wide net), this is the strongest option available.
 
 ```bash
 uv tool install paper-search-mcp
@@ -204,7 +204,7 @@ uv tool install arxiv-mcp-server
 
 Semantic Scholar (maintained by the Allen Institute for AI) is one of the better free academic search APIs, and several MCP servers provide access to it. The most fully-featured implementation offers paper search, author lookup, citation network traversal, and paper recommendations based on a seed paper.
 
-Citation network traversal is the distinctive feature here. You can give Claude Code a paper and ask it to map what cites it, what it cites, and where the clusters of influence are — the kind of bibliometric exploration that's tedious to do manually but genuinely useful when scoping a new area or checking whether you've missed something.
+Citation network traversal is the distinctive feature here. You can give Claude Code a paper and ask it to map what cites it, what it cites, and where the clusters of influence are. This is the kind of bibliometric exploration that's tedious to do manually but genuinely useful when scoping a new area or checking whether you've missed something.
 
 A free API key is required (available at [semanticscholar.org](https://www.semanticscholar.org/product/api)).
 
@@ -218,7 +218,7 @@ It is worth noting that Wiley is currently the only major publisher offering an 
 
 ### Obsidian MCP
 
-If you use Obsidian for research notes, an Obsidian MCP lets Claude Code read, write, and search your vault. This integration is especially powerful for knowledge management workflows — Claude Code can find connections across hundreds of notes that you might not discover through manual browsing alone.
+If you use Obsidian for research notes, an Obsidian MCP lets Claude Code read, write, and search your vault. This integration is especially powerful for knowledge management workflows. Claude Code can find connections across hundreds of notes that you might not discover through manual browsing alone.
 
 ### Notion MCP
 
@@ -226,7 +226,7 @@ For labs or research groups that use Notion for project management, a Notion MCP
 
 ### Web Search / Fetch
 
-MCPs that enable web access let Claude Code pull in information from the open web — useful for checking facts, finding recent preprints, or accessing documentation that isn't stored locally.
+MCPs that enable web access let Claude Code pull in information from the open web, useful for checking facts, finding recent preprints, or accessing documentation that isn't stored locally.
 
 ## Evaluating MCPs
 
@@ -244,10 +244,10 @@ When you connect Claude Code to your research tools, you're giving it access to 
 - **API keys are sensitive.** Store them securely. Don't commit them to version control.
 - **Understand data flow.** When Claude Code queries your Zotero library, the query goes through the MCP server. Know what's processed locally and what hits external APIs.
 - **Unpublished work.** If your Zotero library contains unpublished manuscripts or confidential review materials, be mindful of what you ask Claude Code to access and where that data travels.
-- **Institutional policies.** Your university may have policies about AI tools accessing research data. Check before connecting sensitive systems — this is the kind of question your IRB or IT office can answer.
+- **Institutional policies.** Your university may have policies about AI tools accessing research data. Check before connecting sensitive systems. This is the kind of question your IRB or IT office can answer.
 
 ## Getting Started
 
-1. Start with one MCP — Zotero is a natural first choice for most researchers.
+1. Start with one MCP. Zotero is a natural first choice for most researchers.
 2. Set it up, test it with simple queries, and get a feel for what it can do.
-3. Add more MCPs as your workflow demands them. Don't try to connect everything at once — each integration is worth understanding on its own terms before layering on the next.
+3. Add more MCPs as your workflow demands them. Do not try to connect everything at once. Each integration is worth understanding on its own terms before layering on the next.

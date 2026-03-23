@@ -7,13 +7,13 @@ prerequisites: [getting-started]
 
 # CLAUDE.md as Institutional Memory
 
-Every time you start a new conversation with Claude Code, it begins with no memory of your previous sessions. It doesn't know your project structure, your conventions, your collaborators, or your preferences. You're onboarding a new collaborator from scratch — every single time.
+Every time you start a new conversation with Claude Code, it begins with no memory of your previous sessions. It does not know your project structure, your conventions, your collaborators, or your preferences. You are onboarding a new collaborator from scratch, every single time.
 
 Unless you write a CLAUDE.md.
 
 ## What CLAUDE.md Does
 
-A `CLAUDE.md` file in your project's root directory is automatically loaded at the start of every Claude Code session. It's the first thing Claude Code reads. Whatever you put in this file becomes persistent context — instructions, conventions, and knowledge that carry across every conversation.
+A `CLAUDE.md` file in your project's root directory is automatically loaded at the start of every Claude Code session. It is the first thing Claude Code reads. Whatever you put in this file becomes persistent context: instructions, conventions, and knowledge that carry across every conversation.
 
 For software projects, CLAUDE.md typically contains coding standards and build commands. For academic research, it can be considerably more: a living document that encodes how your research works, what state your projects are in, and what conventions Claude Code needs to respect in order to be genuinely useful.
 
@@ -21,7 +21,7 @@ For software projects, CLAUDE.md typically contains coding standards and build c
 
 Academic projects are complex in ways that aren't always obvious from the file structure alone. They involve naming patterns for data files, manuscript drafts, and notes that only make sense if you know the conventions behind them. They involve relationships between projects, manuscripts, and people that aren't captured in any directory hierarchy. They involve methodological choices that inform how data should be handled, journal-specific formatting requirements that vary across submissions, and ongoing status information that changes week to week.
 
-Without CLAUDE.md, you re-explain all of this every session. With it, Claude Code arrives already understanding your project — not perfectly, but with enough context to be a useful collaborator rather than a blank slate. The difference in both the quality and the relevance of its responses is substantial.
+Without CLAUDE.md, you re-explain all of this every session. With it, Claude Code arrives already understanding your project. Not perfectly, but with enough context to be a useful collaborator rather than a blank slate. The difference in both the quality and the relevance of its responses is substantial.
 
 ## Structuring a CLAUDE.md for Research
 
@@ -63,7 +63,7 @@ We are currently in the [phase: data collection / analysis / writing] stage.
 
 ## CLAUDE.md for a Lab Group
 
-If your lab or research group shares a repository, CLAUDE.md can encode collective conventions — the kind of tacit knowledge that usually lives in a lab handbook or, more often, in no written document at all:
+If your lab or research group shares a repository, CLAUDE.md can encode collective conventions, the kind of tacit knowledge that usually lives in a lab handbook or, more often, in no written document at all:
 
 ```markdown
 # CLAUDE.md — [Lab Name] Research Group
@@ -92,21 +92,21 @@ New lab members should read:
 
 ## Tips for Maintaining CLAUDE.md
 
-1. **Start small.** You don't need a comprehensive document on day one. Add information as you notice yourself repeating it across sessions — each repetition is a signal that something belongs in the file.
+1. **Start small.** You don't need a comprehensive document on day one. Add information as you notice yourself repeating it across sessions. Each repetition is a signal that something belongs in the file.
 
 2. **Update regularly.** CLAUDE.md should reflect your current project status, not a snapshot from the day you created it. Updating the "Current Status" section weekly takes less than a minute and pays for itself in session quality.
 
-3. **Be specific about what not to do.** If there are files Claude Code shouldn't modify, data it shouldn't access, or conventions it shouldn't break, say so explicitly. Negative instructions are often more informative than positive ones — they encode the mistakes you've already encountered or want to prevent.
+3. **Be specific about what not to do.** If there are files Claude Code shouldn't modify, data it shouldn't access, or conventions it shouldn't break, say so explicitly. Negative instructions are often more informative than positive ones. They encode the mistakes you have already encountered or want to prevent.
 
-4. **Include links.** If your project references external resources — a pre-registration, a journal's author guidelines, a shared drive — link to them. Claude Code can often access URLs to retrieve current information, which keeps your CLAUDE.md from needing to duplicate content that lives elsewhere.
+4. **Include links.** If your project references external resources (a pre-registration, a journal's author guidelines, a shared drive), link to them. Claude Code can often access URLs to retrieve current information, which keeps your CLAUDE.md from needing to duplicate content that lives elsewhere.
 
-5. **Version it.** Since CLAUDE.md lives in your project directory, it's naturally version-controlled if you use git. This means you have a history of how your project conventions have evolved — which is itself a useful form of documentation.
+5. **Version it.** Since CLAUDE.md lives in your project directory, it's naturally version-controlled if you use git. This means you have a history of how your project conventions have evolved, which is itself a useful form of documentation.
 
 ## CLAUDE.md as Documentation
 
-Here's a secondary benefit worth noting: a well-maintained CLAUDE.md is also useful documentation for *humans*. When a new collaborator joins your project, they can read CLAUDE.md to understand the structure, conventions, and current status — the same way Claude Code does. The document serves both audiences because the information both audiences need is, in most cases, the same: what is this project, how is it organized, and what should I know before I start working in it.
+Here's a secondary benefit worth noting: a well-maintained CLAUDE.md is also useful documentation for *humans*. When a new collaborator joins your project, they can read CLAUDE.md to understand the structure, conventions, and current status, the same way Claude Code does. The document serves both audiences because the information both audiences need is, in most cases, the same: what is this project, how is it organized, and what should I know before I start working in it.
 
-This dual purpose makes CLAUDE.md worth maintaining even if you stopped using Claude Code tomorrow. It's a lightweight, low-ceremony way to keep project knowledge externalized and current — the kind of documentation that academic projects need but rarely have.
+This dual purpose makes CLAUDE.md worth maintaining even if you stopped using Claude Code tomorrow. It is a lightweight, low-ceremony way to keep project knowledge externalized and current, the kind of documentation that academic projects need but rarely have.
 
 ## Getting Started
 

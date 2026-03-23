@@ -4,7 +4,7 @@ title: "Patterns and Anti-Patterns"
 
 # Patterns and Anti-Patterns
 
-Lessons from daily use of agentic AI tools in academic research. These are not universal rules — they're patterns that have proven useful and anti-patterns that have caused problems. Take what's relevant, discard what isn't.
+Lessons from daily use of agentic AI tools in academic research. These are not universal rules. They are patterns that have proven useful and anti-patterns that have caused problems. Take what's relevant, discard what isn't.
 
 ## Patterns (What Works)
 
@@ -26,7 +26,7 @@ In CLAUDE.md files, skills, and prompts, telling Claude Code what *not* to do is
 
 ### Build Skills From Repeated Explanations
 
-If you've explained the same process to Claude Code more than twice, that's a signal to write a skill. The threshold for "worth encoding" is lower than you think — even a five-line instruction set saves time over re-explaining, and the act of writing the skill often clarifies your own thinking about the workflow.
+If you've explained the same process to Claude Code more than twice, that's a signal to write a skill. The threshold for "worth encoding" is lower than you think. Even a five-line instruction set saves time over re-explaining, and the act of writing the skill often clarifies your own thinking about the workflow.
 
 **The pattern:** Notice yourself saying "like I described last time..." or re-typing a set of instructions. Stop. Write the skill now, while the process is fresh.
 
@@ -34,7 +34,7 @@ If you've explained the same process to Claude Code more than twice, that's a si
 
 ### Use the "Explain, Then Do" Sequence
 
-When asking Claude Code to perform a complex task — an analysis, a restructuring, a multi-file edit — ask it to explain its plan before executing. This catches misunderstandings before they propagate through your files and gives you an opportunity to redirect.
+When asking Claude Code to perform a complex task (an analysis, a restructuring, a multi-file edit), ask it to explain its plan before executing. This catches misunderstandings before they propagate through your files and gives you an opportunity to redirect.
 
 **The pattern:** "Before you make any changes, tell me what you're planning to do and why. Then wait for my approval."
 
@@ -46,7 +46,7 @@ MCP integrations (Zotero, Obsidian, Notion) are powerful but imperfect. Connecti
 
 **The pattern:** If the Obsidian MCP can't find a note, try reading it directly from the file system. If Zotero search fails, check whether the item exists by searching your local Zotero data directory. Don't tell yourself a file doesn't exist until you've tried at least two approaches.
 
-**Why it works:** MCP servers add a layer of abstraction that can introduce its own failure modes. The underlying data is still on your machine — you just need a different path to reach it.
+**Why it works:** MCP servers add a layer of abstraction that can introduce its own failure modes. The underlying data is still on your machine; you just need a different path to reach it.
 
 ### Automate the Scan, Keep the Decision
 
@@ -62,7 +62,7 @@ For recurring maintenance tasks (deadline checks, status sweeps, note generation
 
 ### Letting AI Generate Tasks Without Your Input
 
-AI tools are eager to be helpful, and "helpful" often means generating to-do lists, action items, and next steps. The problem is that unsupervised task generation creates clutter — items appear in your task dashboard that you didn't ask for, don't agree with, or aren't actually important. Over time, the noise erodes trust in the system.
+AI tools are eager to be helpful, and "helpful" often means generating to-do lists, action items, and next steps. The problem is that unsupervised task generation creates clutter. Items appear in your task dashboard that you didn't ask for, don't agree with, or aren't actually important. Over time, the noise erodes trust in the system.
 
 **The anti-pattern:** A skill or scheduled task that automatically creates checkbox tasks (`- [ ] Do this thing`) in your notes.
 
@@ -70,7 +70,7 @@ AI tools are eager to be helpful, and "helpful" often means generating to-do lis
 
 ### Over-Granular Task Decomposition
 
-When asked to help plan a project or break down a task, AI tends to produce exhaustively detailed checklists — ten steps where three would do. This feels productive but creates the illusion of progress without the substance. A single well-described task ("Revise the methods section — add power analysis, justify sample size, and clarify randomization procedure") is almost always better than five sub-tasks that will all be done in the same sitting.
+When asked to help plan a project or break down a task, AI tends to produce exhaustively detailed checklists, ten steps where three would do. This feels productive but creates the illusion of progress without the substance. A single well-described task ("Revise the methods section: add power analysis, justify sample size, and clarify randomization procedure") is almost always better than five sub-tasks that will all be done in the same sitting.
 
 **The anti-pattern:** "Break this task into subtasks" → a list of 12 items, most of which are steps in a single workflow.
 
@@ -78,11 +78,11 @@ When asked to help plan a project or break down a task, AI tends to produce exha
 
 ### Trusting Citations Without Verification
 
-Language models fabricate citations. This is not a rare edge case — studies have found fabrication rates ranging from roughly 14% to over 90% depending on the model and domain. Even when the citation is real, the bibliographic details (volume, page numbers, DOI) may be wrong. A hallucinated citation that survives peer review becomes part of the scientific record.
+Language models fabricate citations. Studies have found fabrication rates ranging from roughly 14% to over 90% depending on the model and domain. Even when the citation is real, the bibliographic details (volume, page numbers, DOI) may be wrong. A hallucinated citation that survives peer review becomes part of the scientific record.
 
 **The anti-pattern:** Asking Claude Code to "add citations to support this argument" and incorporating the results without checking each one.
 
-**The fix:** Treat every AI-generated citation as a hypothesis. Verify it exists. Verify the details are correct. Verify it actually says what the AI claims it says. If you use a Zotero MCP, ask Claude Code to search your existing library rather than generate citations from its training data — at least then you know the paper exists and you've read it.
+**The fix:** Treat every AI-generated citation as a hypothesis. Verify it exists. Verify the details are correct. Verify it actually says what the AI claims it says. If you use a Zotero MCP, ask Claude Code to search your existing library rather than generate citations from its training data. At least then you know the paper exists and you have read it.
 
 ### Using AI for Tasks That Build Your Expertise
 
@@ -94,7 +94,7 @@ The line between "efficient delegation" and "counterproductive shortcutting" run
 
 ### Building Workflows Around a Single Tool's Quirks
 
-Agentic AI tools are evolving rapidly. A workflow that depends on a specific Claude Code behavior, a particular MCP's idiosyncrasies, or an exact prompt formulation is fragile. When the tool updates — and it will — the workflow breaks.
+Agentic AI tools are evolving rapidly. A workflow that depends on a specific Claude Code behavior, a particular MCP's idiosyncrasies, or an exact prompt formulation is fragile. When the tool updates (and it will), the workflow breaks.
 
 **The anti-pattern:** A skill that relies on a specific error message format to detect failures, or a CLAUDE.md instruction that exploits a known model behavior that may not persist across versions.
 
@@ -106,7 +106,7 @@ Every Claude Code session starts fresh. Even with CLAUDE.md providing persistent
 
 **The anti-pattern:** "Last time I asked this, Claude Code gave me a different answer. Something is broken."
 
-**The fix:** Treat variation as normal. If consistency matters for a specific task, encode the expected behavior in a skill with detailed instructions. The more precisely you specify what you want, the more consistent the output — but some variation is inherent and, in many cases, productive (different phrasings of the same idea can surface different insights).
+**The fix:** Treat variation as normal. If consistency matters for a specific task, encode the expected behavior in a skill with detailed instructions. The more precisely you specify what you want, the more consistent the output. But some variation is inherent and, in many cases, productive (different phrasings of the same idea can surface different insights).
 
 ---
 
